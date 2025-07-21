@@ -31,12 +31,5 @@ This mini‑project downloads two Chinese market instruments from **Yahoo Finan
 
 ### Deliverables
 
-- `notebook.ipynb` – full Python notebook with code & inline plots  
-- `portfolio_var.png` – final histogram (10‑day VaR)  
-- `requirements.txt` – Python dependencies (`pandas`, `yfinance`, `matplotlib`, `seaborn`, etc.)
+<img width="562" height="455" alt="image" src="https://github.com/user-attachments/assets/99f07dff-66d7-4c22-b15c-467e78ab2a9b" />
 
-### Quick Start
-
-```bash
-pip install -r requirements.txt
-python notebook.ipynb  # or open in Jupyter
