@@ -1,15 +1,16 @@
-# VaRHistorical
+## 📊 10‑Day Value‑at‑Risk (VaR) Analysis
 
-In this project, I download financial data from yahoo finance to form a portfolio and calculate the 10 day VaR, which I create a histogram to visualize the VaR at the end. 
+This mini‑project downloads two Chinese market instruments from **Yahoo Finance**, builds a two‑asset portfolio, and visualizes its 10‑day 99 % Historical VaR with a histogram.
 
-The portfolio consists of two index. 000300.SS is a free‑float‑weighted benchmark made up of the 300 largest, most liquid “A‑shares” traded on both the Shanghai and Shenzhen stock exchanges. It is the flagship index of China Securities Index Co. CYBU.AS is the iShares China CNY Bond UCITS ETF (USD‑hedged share‑class) listed on Euronext Amsterdam. It is not a stock or bond but an exchange‑traded fund managed by BlackRock’s iShares range. We download the past 2 years data from July 21, 2025.
+### Data Universe
 
-Steps:
+| Ticker | Instrument | Description |
+|--------|-----------|-------------|
+| `000300.SS` | **CSI 300 Index** | Free‑float‑weighted benchmark of the 300 largest, most liquid A‑shares on the Shanghai & Shenzhen Stock Exchanges. |
+| `CYBU.AS` | **iShares China CNY Bond UCITS ETF (USD‑hedged)** | ETF providing on‑shore CNY bond exposure, fully currency‑hedged to USD, listed on Euronext Amsterdam. |
 
-1.download data
-2.use Ln to calculate the return respectively
-3.assign the weight to CSI300 and ETF and calculate the weighted return
-4.sum up the return
-5.calculate the profit and loss in a 10-day segment
-6.based on a 99% confidence interval, we find the corresponding VaR
-7.graph the 10-day VaR
+> **Look‑back window:** last 2 years (from 21 July 2023 to 21 July 2025)
+
+### Methodology
+
+1. **Download daily closes** for
