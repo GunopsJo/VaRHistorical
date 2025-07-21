@@ -13,4 +13,30 @@ This mini‑project downloads two Chinese market instruments from **Yahoo Finan
 
 ### Methodology
 
-1. **Download daily closes** for
+1. **Download daily closes** for both tickers via `yfinance`.
+2. **Compute daily log returns**:  
+   \[
+   r_{t} = \ln\!\bigl(\tfrac{P_{t}}{P_{t-1}}\bigr)
+   \]
+3. **Assign portfolio weights**  
+   • CSI 300 Index —— 60 %  
+   • CYBU ETF —— 40 %
+4. **Calculate weighted return** per day and **aggregate** to a total portfolio return.  
+5. **Roll up into 10‑day profit‑and‑loss (P/L)** blocks using a rolling window sum.  
+6. **Historical 99 % VaR**: take the 1 % left‑tail quantile of the 10‑day P/L distribution.  
+7. **Plot results**  
+   * Histogram of 10‑day P/L  
+   * Red dashed line marking the VaR threshold  
+   * Shaded tail (losses ≤ VaR) for quick visual risk assessment.
+
+### Deliverables
+
+- `notebook.ipynb` – full Python notebook with code & inline plots  
+- `portfolio_var.png` – final histogram (10‑day VaR)  
+- `requirements.txt` – Python dependencies (`pandas`, `yfinance`, `matplotlib`, `seaborn`, etc.)
+
+### Quick Start
+
+```bash
+pip install -r requirements.txt
+python notebook.ipynb  # or open in Jupyter
