@@ -15,9 +15,6 @@ This mini‑project downloads two Chinese market instruments from **Yahoo Finan
 
 1. **Download daily closes** for both tickers via `yfinance`.
 2. **Compute daily log returns**:  
-   \[
-   r_{t} = \ln\!\bigl(\tfrac{P_{t}}{P_{t-1}}\bigr)
-   \]
 3. **Assign portfolio weights**  
    • CSI 300 Index —— 60 %  
    • CYBU ETF —— 40 %
