@@ -28,5 +28,7 @@ This mini‑project downloads two Chinese market instruments from **Yahoo Finan
 
 ### Deliverables
 
-<img width="562" height="455" alt="image" src="https://github.com/user-attachments/assets/99f07dff-66d7-4c22-b15c-467e78ab2a9b" />
+
+<img width="562" height="455" alt="image" src="https://github.com/user-attachments/assets/56ea8cc0-12da-4d26-8020-f6975c441029" />
+
 
