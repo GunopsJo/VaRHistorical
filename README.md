@@ -6,8 +6,8 @@ This mini‑project downloads two Chinese market instruments from **Yahoo Finan
 
 | Ticker | Instrument | Description |
 |--------|-----------|-------------|
-| `000300.SS` | **CSI 300 Index** | Free‑float‑weighted benchmark of the 300 largest, most liquid A‑shares on the Shanghai & Shenzhen Stock Exchanges. |
-| `CYBU.AS` | **iShares China CNY Bond UCITS ETF (USD‑hedged)** | ETF providing on‑shore CNY bond exposure, fully currency‑hedged to USD, listed on Euronext Amsterdam. |
+| `^GSPC` | **S&P 500 Index** | Free‑float‑weighted benchmark of the 300 largest,. |
+| `XBB.TO` | **iShares Core Canadian Universe Bond Index ETF** | |
 
 > **Look‑back window:** last 2 years (from 21 July 2023 to 21 July 2025)
 
@@ -16,8 +16,8 @@ This mini‑project downloads two Chinese market instruments from **Yahoo Finan
 1. **Download daily closes** for both tickers via `yfinance`.
 2. **Compute daily log returns**:  
 3. **Assign portfolio weights**  
-   • CSI 300 Index —— 60 %  
-   • CYBU ETF —— 40 %
+   • S&P 500 Index —— 60 %  
+   • iShares Core Canadian Universe Bond Index ETF —— 40 %
 4. **Calculate weighted return** per day and **aggregate** to a total portfolio return.  
 5. **Roll up into 10‑day profit‑and‑loss (P/L)** blocks using a rolling window sum.  
 6. **Historical 99 % VaR**: take the 1 % left‑tail quantile of the 10‑day P/L distribution.  
